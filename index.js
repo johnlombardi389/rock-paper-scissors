@@ -1,7 +1,14 @@
 function getComputerChoice() {
   let cpuHand = ["Rock", "Paper", "Scissors"];
   let random = Math.floor(Math.random() * cpuHand.length);
-  console.log(cpuHand[random]);
+  console.log("CPU: " + cpuHand[random]);
 }
 
-getComputerChoice();
+function game(playerSelection, cpuSelection){
+  playerSelection = prompt("Rock, Paper, or Scissors?");
+  cpuSelection = getComputerChoice();
+
+  console.log("Player: " + playerSelection);
+}
+
+game();
