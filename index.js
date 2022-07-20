@@ -31,4 +31,30 @@ function gameRound(playerSelection, cpuSelection) {
       console.log("Player wins!! Rock beats Scissors");
     }
   }
+  else if (playerSelection === "PAPER") {
+    if (cpuSelection === "ROCK") {
+      playerScore++;
+      console.log("Player wins!! Paper beats Rock");
+    }
+    else if (cpuSelection == "PAPER") {
+      console.log("Tie!!!");
+    }
+    else {
+      cpuScore++;
+      console.log("CPU wins!! Scissors beats Paper");
+    }
+  }
+  else {
+    if (cpuSelection === "ROCK") {
+      cpuScore++;
+      console.log("CPU wins!! Rock beats Scissors");
+    }
+    else if (cpuSelection === "PAPER") {
+      playerScore++;
+      console.log("Player wins!! Scissors beats Paper");
+    }
+    else {
+      console.log("Tie!!!");
+    }
+  }
 }
