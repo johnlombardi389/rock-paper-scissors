@@ -2,7 +2,6 @@
 function computerChoice() {
   let cpuHand = ["ROCK", "PAPER", "SCISSORS"];
   let random = Math.floor(Math.random() * cpuHand.length);
-  // console.log("CPU: " + cpuHand[random]);
 }
 
 /* Player hand choice
