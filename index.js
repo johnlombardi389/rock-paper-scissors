@@ -12,23 +12,23 @@ function playerChoice() {
   while (choice == null) {
     choice = prompt("Rock, Paper, or Scissors?");
   }
-  choice = choice.toUpperCase();
 }
 
-function gameRound(computerChoice, playerChoice) {
-  let computerChoice = computerChoice();
-  let playerChoice = playerChoice();
+let cpuScore = 0;
+let playerScore = 0;
 
-  console.log("CPU chooses " + computerChoice);
-  console.log("Player chooses " + playerChoice);
-
-  if (playerChoice == "ROCK" && computerChoice == "SCISSORS" || playerChoice == "PAPER" && computerChoice == "ROCK" || playerChoice == "PAPER" && computerChoice == "ROCK") {
-    console.log("Player wins!!!");
-  }
-  else if (playerChoice == "ROCK" && computerChoice == "ROCK" || playerChoice == "PAPER" && computerChoice == "PAPER" || playerChoice == "SCISSORS" && computerChoice == "SCISSORS") {
-    console.log("Tie game!!!");
-  }
-  else {
-    console.log("CPU wins!!!");
+function gameRound(playerSelection, cpuSelection) {
+  if (playerSelection.toUpperCase() === "ROCK") {
+    if (cpuSelection === "ROCK") {
+      console.log("Tie!!!");
+    }
+    else if (cpuSelection === "PAPER") {
+      cpuScore++;
+      console.log("CPU wins!! Paper beats Rock");
+    }
+    else {
+      playerScore++;
+      console.log("Player wins!! Rock beats Scissors");
+    }
   }
 }
