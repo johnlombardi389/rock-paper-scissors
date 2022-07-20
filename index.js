@@ -5,7 +5,7 @@ function computerChoice() {
   // console.log("CPU: " + cpuHand[random]);
 }
 
-// Player hand choice
+/* Player hand choice
 function playerChoice() {
   let choice = prompt("Rock, Paper, or Scissors?");
   // Check for user input
@@ -13,11 +13,14 @@ function playerChoice() {
     choice = prompt("Rock, Paper, or Scissors?");
   }
 }
+*/
 
+// Track player scores
 let cpuScore = 0;
 let playerScore = 0;
 
-function gameRound(playerSelection, cpuSelection) {
+// 1 round of game
+function playRound(playerSelection, cpuSelection) {
   if (playerSelection.toUpperCase() === "ROCK") {
     if (cpuSelection === "ROCK") {
       console.log("Tie!!!");
@@ -58,3 +61,16 @@ function gameRound(playerSelection, cpuSelection) {
     }
   }
 }
+
+// 1 game of RPS that plays 5 rounds
+function game() {
+  for (let i = 0; i < 5; i++) {
+    let playerSelection = prompt("Rock, Paper, or Scissors?");
+    const cpuSelection = computerChoice();
+    console.log(playRound(playerSelection, cpuSelection));
+    console.log("Player score: " + playerScore);
+    console.log("CPU score: " + cpuScore);
+  }
+}
+
+game();
