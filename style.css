@@ -3,6 +3,17 @@
   padding: 0;
 }
 
+.title {
+  margin: auto;
+  padding: 25px;
+  background-color: yellow;
+  text-align: center;
+}
+
+.instruction {
+  margin-top: 50px;
+}
+
 .btn-cont {
   margin: auto;
   display: flex;
@@ -16,7 +27,7 @@ button {
   padding: 15px 30px;
   text-align: center;
   margin: 20px 10px;
-  background-color: rgb(24, 24, 24);
+  background-color: rgb(56, 56, 56);
   color: white;
   font-family: sans-serif;
   font-size: 15px;
@@ -25,5 +36,5 @@ button {
 
 button:hover {
   transition-duration: 0.3s;
-  background-color: rgb(78, 78, 78);
+  background-color: rgb(0, 0, 0);
 }
