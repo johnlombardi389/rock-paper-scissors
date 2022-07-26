@@ -61,16 +61,14 @@ function playRound(playerSelection, cpuSelection) {
   }
 }
 
-document.querySelector('button');
-let handChoice = button.addEventListener('click', function() {
-  //regiuster choice
-  let playerSelection = "ROCK";
-  //inpu that chpoice into the round and run it
+const handButtons = document.querySelectorAll('[data-selection]');
+
+handButtons.forEach(handButton => {
+  handButton.addEventListener('click', e => {
+    const handName = handButton.dataset.selection;
+    selectHand(handName);
+  })
 })
-
-const ROCK = document.querySelector('#rock');
-ROCK.addEventListener('click', () => )
-
 
 /*
 // 1 game of RPS that plays 5 rounds
