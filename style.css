@@ -39,6 +39,13 @@ button:hover {
   background-color: rgb(0, 0, 0);
 }
 
+.round {
+  margin: auto;
+  padding: 25px;
+  background-color: yellow;
+  text-align: center;
+}
+
 .results {
   display: grid;
   justify-content: center;
@@ -46,9 +53,4 @@ button:hover {
   justify-items: center;
   align-items: center;
   margin: 25px 25%;
-}
-
-.score {
-  margin-left: 0.5rem;
-  font-size: 0.75rem;
 }

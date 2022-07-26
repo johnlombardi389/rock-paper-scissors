@@ -15,18 +15,23 @@
       <p class="instruction">Select your hand by clicking a button</p>
     </div>
     <div class="btn-cont">
-      <button type="button" data-selection="ROCK">ROCK</button>
-      <button type="button" data-selection="PAPER">PAPER</button>
-      <button type="button" data-selection="SCISSORS">SCISSORS</button>
+      <button type="button" id="ROCK">ROCK</button>
+      <button type="button" id="PAPER">PAPER</button>
+      <button type="button" id="SCISSORS">SCISSORS</button>
+    </div>
+    <div class="round">
+      <h4>Player chooses: <span id="player-choice"></span></h4>
+      <h4>Computer chooses: <span id="cpu-choice"></span></h4>
+      <h2>Winner: <span id="result"</span></h2>
     </div>
     <div class="results">
       <div>
-        Player
-      <span class="score">0</span>
+        <h3>Player</h3>
+        <span class="score">0</span>
       </div>
       <div>
-        Computer
-      <span class="score">0</span>
+        <h3>Computer</h3>
+        <span class="score">0</span>
       </div>
     </div>
     

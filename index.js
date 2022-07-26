@@ -1,8 +1,8 @@
-// Computer hand choice
+/* Computer hand choice
 function computerChoice() {
   let cpuHand = ["ROCK", "PAPER", "SCISSORS"];
   let random = Math.floor(Math.random() * cpuHand.length);
-}
+}*/
 
 /* Player hand choice
 function playerChoice() {
@@ -13,7 +13,7 @@ function playerChoice() {
   }
 }
 */
-
+/*
 // Track player scores
 let cpuScore = 0;
 let playerScore = 0;
@@ -59,16 +59,7 @@ function playRound(playerSelection, cpuSelection) {
       console.log("Tie!!!");
     }
   }
-}
-
-const handButtons = document.querySelectorAll('[data-selection]');
-
-handButtons.forEach(handButton => {
-  handButton.addEventListener('click', e => {
-    const handName = handButton.dataset.selection;
-    selectHand(handName);
-  })
-})
+}*/
 
 /*
 // 1 game of RPS that plays 5 rounds
@@ -84,3 +75,14 @@ function game() {
 
 game();
 */
+
+const cpuChoiceDisplay = document.getElementById('cpu-choice');
+const playerChoiceDisplay = document.getElementById('player-choice');
+const resultWinner = document.getElementById('result');
+const possibleHandChoices = document.querySelectorAll('button');
+let playerChoice;
+
+possibleHandChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', e => {
+  playerChoice = e.target.id;
+  playerChoiceDisplay.innerHTML = playerChoice;
+}))
