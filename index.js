@@ -60,7 +60,7 @@ function playRound(playerSelection, cpuSelection) {
     }
   }
 }
-
+/*
 // 1 game of RPS that plays 5 rounds
 function game() {
   for (let i = 0; i < 5; i++) {
@@ -73,3 +73,4 @@ function game() {
 }
 
 game();
+*/
