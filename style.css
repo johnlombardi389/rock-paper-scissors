@@ -1,10 +1,12 @@
 * {
-  background-color: rgb(247, 221, 252);
-  color: rgb(0, 37, 0);
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  text-decoration: underline;
-  font-family: sans-serif;
-  font-size: 30px;
+.btn-cont {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: pink;
 }
