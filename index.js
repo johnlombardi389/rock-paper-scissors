@@ -82,12 +82,13 @@ const resultWinner = document.getElementById('result');
 const possibleHandChoices = document.querySelectorAll('button');
 let playerChoice;
 let cpuChoice;
+//let winner;
 
 possibleHandChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', e => {
   playerChoice = e.target.id;
   playerChoiceDisplay.innerHTML = playerChoice;
   cpuRandomChoice();
-
+  playRound();
 }))
 
 function cpuRandomChoice() {
@@ -104,4 +105,37 @@ function cpuRandomChoice() {
   }
   
   cpuChoiceDisplay.innerHTML = cpuChoice;
+}
+
+function playRound(playerChoice, cpuChoice) {
+  let winner = "The winner is...";
+  if (playerChoice === cpuChoice) {
+    winner = "TIE!";
+    console.log("Tie");
+  }
+  if (playerChoice === "ROCK" && cpuChoice === "PAPER") {
+    winner = "COMPUTER!";
+    console.log("Computer");
+  }
+  if (playerChoice === "ROCK" && cpuChoice === "SCISSORS") {
+    winner = "PLAYER!";
+    console.log("Player");
+  }
+  if (playerChoice === "PAPER" && cpuChoice === "ROCK") {
+    winner = "PLAYER!";
+    console.log("Player");
+  }
+  if (playerChoice === "PAPER" && cpuChoice === "SCISSORS") {
+    winner = "COMPUTER!";
+    console.log("Computer");
+  }
+  if (playerChoice === "SCISSORS" && cpuChoice === "ROCK") {
+    winner = "COMPUTER!";
+    console.log("Computer");
+  }
+  if (playerChoice === "SCISSORS" && cpuChoice === "PAPER") {
+    winner = "PLAYER!";
+    console.log("Player");
+  }
+  resultWinner.innerHTML = winner;
 }
