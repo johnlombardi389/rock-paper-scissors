@@ -81,8 +81,27 @@ const playerChoiceDisplay = document.getElementById('player-choice');
 const resultWinner = document.getElementById('result');
 const possibleHandChoices = document.querySelectorAll('button');
 let playerChoice;
+let cpuChoice;
 
 possibleHandChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', e => {
   playerChoice = e.target.id;
   playerChoiceDisplay.innerHTML = playerChoice;
+  cpuRandomChoice();
+
 }))
+
+function cpuRandomChoice() {
+  const randomNum = Math.floor((Math.random() * 3) + 1);
+  
+  if (randomNum === 1) {
+    cpuChoice = "ROCK";
+  }
+  if (randomNum === 2) {
+    cpuChoice = "PAPER";
+  }
+  if (randomNum === 3) {
+    cpuChoice = "SCISSORS";
+  }
+  
+  cpuChoiceDisplay.innerHTML = cpuChoice;
+}
