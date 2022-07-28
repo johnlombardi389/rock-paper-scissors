@@ -25,10 +25,11 @@ function winner(playerChoice, cpuChoice) {
 function loser(playerChoice, cpuChoice) {
   cpuScore++;
   cpuScore_span.innerHTML = cpuScore;
+  result_div.innerHTML = cpuChoice.charAt(0).toUpperCase() + cpuChoice.slice(1) + " > " + playerChoice.charAt(0).toUpperCase() + playerChoice.slice(1) + ". You lose!";
 }
 
 function tie(playerChoice, cpuChoice) {
-  console.log("TIE");
+  result_div.innerHTML = playerChoice.charAt(0).toUpperCase() + playerChoice.slice(1) + " = " + cpuChoice.charAt(0).toUpperCase() + cpuChoice.slice(1) + ". Tie!";
 }
 
 function playRound(playerChoice) {
