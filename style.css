@@ -1,56 +1,82 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-.title {
-  margin: auto;
-  padding: 25px;
-  background-color: yellow;
-  text-align: center;
-}
-
-.instruction {
-  margin-top: 50px;
-}
-
-.btn-cont {
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: pink;
-}
-
-button {
-  border: none;
-  padding: 15px 30px;
-  text-align: center;
-  margin: 20px 10px;
-  background-color: rgb(56, 56, 56);
-  color: white;
+  box-sizing: border-box;
   font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(85, 109, 109);
+}
+
+header {
+  background-color: black;
+  padding: 25px;
+}
+
+header > h1 {
+  color: blue;
+  text-align: center;
+}
+
+.scoreboard {
+  border: 5px solid white;
+  border-radius: 5px;
+  width: 250px;
+  margin: 25px auto;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.badge {
+  background-color: rgb(136, 71, 71);
+  color: white;
   font-size: 15px;
+  padding: 2px 10px;
+
+}
+
+#player-label {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+
+#cpu-label {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+}
+
+.result {
+  font-size: 30px;
+  color: white;
+}
+
+.result > p {
+  text-align: center;
   font-weight: bold;
 }
 
-button:hover {
-  transition-duration: 0.3s;
-  background-color: rgb(0, 0, 0);
-}
-
-.round {
-  margin: auto;
-  padding: 25px;
-  background-color: yellow;
-  text-align: center;
-}
-
-.results {
-  display: grid;
+.choices {
+  display: flex;
   justify-content: center;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
   align-items: center;
-  margin: 25px 25%;
+  margin: 20px auto;
+}
+
+.choice-btn {
+  border: none;
+  background-color: rgb(139, 139, 214);
+  color: black;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.choice-btn:hover {
+  background-color: blue;
+  color: white;
 }
