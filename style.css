@@ -80,3 +80,13 @@ header > h1 {
   background-color: blue;
   color: white;
 }
+
+.winner-badge {
+  color: green;
+  transition: all 1s ease-out;
+}
+
+.loser-badge {
+  color: red;
+  transition: all 1s ease-out;
+}

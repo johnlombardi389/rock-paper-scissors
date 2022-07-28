@@ -19,16 +19,31 @@ function getCpuChoice() {
 function winner(playerChoice, cpuChoice) {
   playerScore++;
   playerScore_span.innerHTML = playerScore;
+  //Capitalize first letter of choice
   result_div.innerHTML = playerChoice.charAt(0).toUpperCase() + playerChoice.slice(1) + " > " + cpuChoice.charAt(0).toUpperCase() + cpuChoice.slice(1) + ". You win!";
+  //Add green and red colors to names
+  document.getElementById('player-label').classList.add('winner-badge');
+  document.getElementById('cpu-label').classList.add('loser-badge');
+  //Remove colors
+  setTimeout(() => document.getElementById('player-label').classList.remove('winner-badge'), 750);
+  setTimeout(() => document.getElementById('cpu-label').classList.remove('loser-badge'), 750);
 }
 
 function loser(playerChoice, cpuChoice) {
   cpuScore++;
   cpuScore_span.innerHTML = cpuScore;
+  //Capitalize first letter of choice
   result_div.innerHTML = cpuChoice.charAt(0).toUpperCase() + cpuChoice.slice(1) + " > " + playerChoice.charAt(0).toUpperCase() + playerChoice.slice(1) + ". You lose!";
+  //Add green and red colors to names
+  document.getElementById('player-label').classList.add('loser-badge');
+  document.getElementById('cpu-label').classList.add('winner-badge');
+  //Remove colors
+  setTimeout(() => document.getElementById('player-label').classList.remove('loser-badge'), 750);
+  setTimeout(() => document.getElementById('cpu-label').classList.remove('winner-badge'), 750);
 }
 
 function tie(playerChoice, cpuChoice) {
+  //Capitalize first letter of choice
   result_div.innerHTML = playerChoice.charAt(0).toUpperCase() + playerChoice.slice(1) + " = " + cpuChoice.charAt(0).toUpperCase() + cpuChoice.slice(1) + ". Tie!";
 }
 
@@ -59,6 +74,3 @@ function main() {
   paper_btn.addEventListener('click', e => playRound("paper"));
   scissors_btn.addEventListener('click', e => playRound("scissors"));
 }
-
-
-
