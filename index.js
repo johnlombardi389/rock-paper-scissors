@@ -18,8 +18,23 @@ function getCpuChoice() {
 
 function playRound(playerChoice) {
   const cpuChoice = getCpuChoice();
-  console.log("CPU: " + cpuChoice);
-  console.log("Player: " + playerChoice);
+  switch (playerChoice + cpuChoice) {
+    case "rockscissors":
+    case "paperrock":
+    case "scissorspaper":
+      console.log("Player wins!");
+      break;
+    case "rockpaper":
+    case "paperscissors":
+    case "scissorsrock":
+      console.log("CPU wins!");
+      break;
+    case "rockrock":
+    case "paperpaper":
+    case "scissorsscissors":
+      console.log("Tie!");
+      break;
+  }
 }
 
 main();
