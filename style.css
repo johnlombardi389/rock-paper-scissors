@@ -51,6 +51,10 @@ header > h1 {
   right: 0px;
 }
 
+.vs {
+  font-size: 20px;
+}
+
 .result {
   font-size: 30px;
   color: white;
@@ -72,8 +76,9 @@ header > h1 {
   border: none;
   background-color: rgb(139, 139, 214);
   color: black;
-  padding: 10px 20px;
+  padding: 10px 30px;
   transition: all 0.3s ease;
+  margin: 0px 5px;
 }
 
 .choice-btn:hover {
@@ -89,4 +94,21 @@ header > h1 {
 .loser-badge {
   color: red;
   transition: all 1s ease-out;
+}
+
+#history {
+  width: 400px;
+  margin: 50px auto 0px auto;
+  background-color: pink;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.result-line {
+  padding: 10px 0px;
+  background-color: red;
 }
