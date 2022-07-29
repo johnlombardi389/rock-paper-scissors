@@ -6,16 +6,15 @@
 }
 
 body {
-  background-color: rgb(85, 109, 109);
+  background-color: #2B2D42;
 }
 
 header {
-  background-color: black;
   padding: 25px;
 }
 
 header > h1 {
-  color: blue;
+  color: #EDF2F4;
   text-align: center;
 }
 
@@ -29,6 +28,12 @@ header > h1 {
   text-align: center;
   padding: 10px 20px;
   position: relative;
+}
+
+.rules > p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #8D99AE;
 }
 
 .badge {
@@ -74,15 +79,16 @@ header > h1 {
 
 .choice-btn {
   border: none;
-  background-color: rgb(139, 139, 214);
-  color: black;
+  background-color: #EF233C;
+  color: #EDF2F4;
   padding: 10px 30px;
   transition: all 0.3s ease;
   margin: 0px 5px;
+  font-weight: bold;
 }
 
 .choice-btn:hover {
-  background-color: blue;
+  background-color: #D90429;
   color: white;
 }
 
@@ -99,7 +105,6 @@ header > h1 {
 #history {
   width: 400px;
   margin: 50px auto 0px auto;
-  background-color: pink;
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
@@ -108,7 +113,24 @@ header > h1 {
   text-align: center;
 }
 
+.history-title {
+  color: #181925;
+}
+
 .result-line {
   padding: 10px 0px;
-  background-color: red;
+  color: #8D99AE;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  color: white;
+}
+
+footer > h6 {
+  margin-top: 20px;
 }
