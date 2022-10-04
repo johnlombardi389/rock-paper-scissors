@@ -152,7 +152,7 @@ main {
 }
 
 .history-title {
-  color: var(--clr-main);
+  color: var(--clr-dark);
   font-family: "Blinker", sans-serif;
   font-size: 15px;
   font-weight: 700;
@@ -160,6 +160,7 @@ main {
 
 .result-line {
   padding: 10px 0px;
-  color: var(--clr-dark);
+  color: var(--clr-main);
   font-family: sans-serif;
+  font-weight: 700;
 }
