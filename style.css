@@ -27,8 +27,6 @@ body {
 
 header {
   font-family: "Blinker", sans-serif;
-  font-size: 30px;
-  font-weight: 700;
   width: 100%;
   background-color: var(--clr-accent);
   display: flex;
@@ -40,6 +38,8 @@ header {
 header > p {
   color: var(--clr-main);
   text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 main {
