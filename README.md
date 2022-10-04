@@ -1,3 +1,5 @@
-# rock-paper-scissors
+# Rock, Paper, Scissors Game
 
-Creating the game rock, paper, scissors using JavaScript, HTML, and CSS.
+Re-creating a simple implementation of the game rock, paper, scissors using JavaScript, HTML, and CSS.
+
+![My Image](images/rps-img.png)
