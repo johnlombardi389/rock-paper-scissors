@@ -1,61 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <title>Rock Paper Scissors</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;400;700&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <p>Let's play Rock, Paper, Scissors!!!</p>
     </header>
 
-    <div class="scoreboard">
-      <div class="badge" id="player-label">Player</div>
-      <div class="badge" id="cpu-label">CPU</div>
-      <span id="player-score">0</span><span class="vs"> vs </span><span id="cpu-score">0</span>
-    </div>
-
-    <div class="rules">
-      <p>Rules: First to 5 wins. Rock > Scissors, Paper > Rock, Scissors > Paper</p>
-    </div>
-
-    <div class="result">
-      <p>Select your hand</p>
-    </div>
-
-    <div class="choices">
-      <div class="choice">
-        <button class="choice-btn" id="rock">Rock ✊</button>
-        <button class="choice-btn" id="paper">Paper ✋</button>
-        <button class="choice-btn" id="scissors">Scissors ✌️</button>
+    <main>
+      <div class="scoreboard">
+        <div class="badge" id="player-label">Player</div>
+        <div class="badge" id="cpu-label">CPU</div>
+        <span id="player-score">0</span><span class="vs"> vs </span
+        ><span id="cpu-score">0</span>
       </div>
-    </div>
 
-    <div id="history">
-      <div id="game-num">
-        <h3 class="history-title">Game</h3>
-        <div class="result-line"></div>
+      <div class="rules">
+        <p>
+          Rules: First to 5 wins. Rock > Scissors, Paper > Rock, Scissors >
+          Paper
+        </p>
       </div>
-      <div id="game-winner">
-        <h3 class="history-title">Winner</h3>
-        <div class="result-line"></div>
-      </div>
-      <div id="game-score">
-        <h3 class="history-title">Score</h3>
-        <div class="result-line"></div>
-      </div>
-    </div>
 
-	<script src="index.js"></script>
+      <div class="result">
+        <p>Select your hand</p>
+      </div>
+
+      <div class="choices">
+        <div class="choice">
+          <button class="choice-btn" id="rock">Rock ✊</button>
+          <button class="choice-btn" id="paper">Paper ✋</button>
+          <button class="choice-btn" id="scissors">Scissors ✌️</button>
+        </div>
+      </div>
+
+      <div id="history">
+        <div id="game-num">
+          <h3 class="history-title">Game</h3>
+          <div class="result-line"></div>
+        </div>
+        <div id="game-winner">
+          <h3 class="history-title">Winner</h3>
+          <div class="result-line"></div>
+        </div>
+        <div id="game-score">
+          <h3 class="history-title">Score</h3>
+          <div class="result-line"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Hello Test</p>
+    </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
