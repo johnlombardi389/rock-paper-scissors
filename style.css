@@ -49,7 +49,7 @@ main {
 .scoreboard {
   border: 2px solid var(--clr-scoretext);
   border-radius: 5px;
-  width: 250px;
+  width: 300px;
   margin: 50px auto 25px auto;
   color: white;
   font-family: sans-serif;
@@ -77,14 +77,14 @@ main {
 #player-label {
   position: absolute;
   top: 20px;
-  left: 0px;
+  left: 10px;
   transition: 0.2s ease-in-out;
 }
 
 #cpu-label {
   position: absolute;
   top: 20px;
-  right: 0px;
+  right: 10px;
   transition: 0.2s ease-in-out;
 }
 
