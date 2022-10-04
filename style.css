@@ -5,6 +5,8 @@
   --clr-grey: #efefef;
   --clr-dark: #181925;
   --clr-scoretext: #8d99ae;
+  --clr-btn: #ef233c;
+  --clr-btnhover: #d90429;
 }
 
 *,
@@ -27,7 +29,6 @@ header {
   font-family: "Blinker", sans-serif;
   font-size: 30px;
   font-weight: 700;
-  height: 10vh;
   width: 100%;
   background-color: var(--clr-accent);
   display: flex;
@@ -42,7 +43,6 @@ header > p {
 }
 
 main {
-  height: 85vh;
   background-color: var(--clr-light);
 }
 
@@ -110,7 +110,7 @@ main {
 
 .choice-btn {
   border: none;
-  background-color: #ef233c;
+  background-color: var(--clr-btn);
   color: #edf2f4;
   padding: 10px 30px;
   transition: all 0.3s ease;
@@ -121,7 +121,7 @@ main {
 }
 
 .choice-btn:hover {
-  background-color: #d90429;
+  background-color: var(--clr-btnhover);
   color: white;
 }
 
@@ -136,7 +136,7 @@ main {
 }
 
 #history {
-  width: 300px;
+  width: 500px;
   margin: 50px auto 0px auto;
   display: grid;
   justify-content: center;
@@ -144,10 +144,13 @@ main {
   justify-items: center;
   align-items: center;
   text-align: center;
+  background-color: var(--clr-accent);
+  border-radius: 10px;
+  padding: 25px 0px 25px 0px;
 }
 
 .history-title {
-  color: #181925;
+  color: var(--clr-main);
   font-family: "Blinker", sans-serif;
   font-size: 15px;
   font-weight: 700;
@@ -155,10 +158,12 @@ main {
 
 .result-line {
   padding: 10px 0px;
-  color: #8d99ae;
+  color: var(--clr-dark);
   font-family: sans-serif;
 }
 
 footer {
-  height: 5vh;
+  position: fixed;
+  bottom: 0;
+  left: 100px;
 }
