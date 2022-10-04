@@ -50,7 +50,7 @@ main {
   border: 2px solid var(--clr-scoretext);
   border-radius: 5px;
   width: 250px;
-  margin: 100px auto 25px auto;
+  margin: 50px auto 25px auto;
   color: white;
   font-family: sans-serif;
   font-size: 40px;
