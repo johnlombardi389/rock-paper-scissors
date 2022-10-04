@@ -47,7 +47,7 @@ main {
 }
 
 .scoreboard {
-  border: 2px solid var(--clr-scoretext);
+  border: 3px solid var(--clr-scoretext);
   border-radius: 5px;
   width: 300px;
   margin: 50px auto 25px auto;
@@ -58,7 +58,6 @@ main {
   padding: 10px 20px;
   position: relative;
   background-color: var(--clr-dark);
-  box-shadow: 3px 3px 10px var(--clr-dark);
 }
 
 .rules > p {
