@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@100;400;700&display=swap");
+
 :root {
   --clr-main: #d2001a;
   --clr-accent: #ffde00;
@@ -7,6 +9,12 @@
   --clr-scoretext: #8d99ae;
   --clr-btn: #ef233c;
   --clr-btnhover: #d90429;
+
+  --ff-main: "Blinker", sans-serif;
+
+  --fw-light: 100;
+  --fw-reg: 400;
+  --fw-bold: 700;
 }
 
 *,
@@ -26,7 +34,7 @@ body {
 }
 
 header {
-  font-family: "Blinker", sans-serif;
+  font-family: var(--ff-main);
   width: 100%;
   background-color: var(--clr-accent);
   display: flex;
@@ -39,7 +47,7 @@ header > p {
   color: var(--clr-main);
   text-align: center;
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
 }
 
 main {
@@ -99,8 +107,8 @@ main {
 
 .result > p {
   text-align: center;
-  font-family: "Blinker", sans-serif;
-  font-weight: 400;
+  font-family: var(--ff-main);
+  font-weight: var(--fw-reg);
 }
 
 .choices {
@@ -117,9 +125,9 @@ main {
   padding: 10px 30px;
   transition: all 0.3s ease;
   margin: 0px 5px;
-  font-family: "Blinker", sans-serif;
+  font-family: var(--ff-main);
   font-size: 20px;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
 }
 
 .choice-btn:hover {
@@ -153,14 +161,15 @@ main {
 
 .history-title {
   color: var(--clr-dark);
-  font-family: "Blinker", sans-serif;
-  font-size: 15px;
-  font-weight: 700;
+  font-family: var(--ff-main);
+  font-size: 1.2rem;
+  font-weight: var(--fw-bold);
 }
 
 .result-line {
   padding: 10px 0px;
   color: var(--clr-main);
-  font-family: sans-serif;
-  font-weight: 700;
+  font-family: var(--ff-main);
+  font-weight: var(--fw-reg);
+  font-size: 1rem;
 }
