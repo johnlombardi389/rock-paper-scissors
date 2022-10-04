@@ -93,6 +93,7 @@ main {
 .result {
   font-size: 30px;
   color: var(--clr-dark);
+  margin-top: 25px;
 }
 
 .result > p {
@@ -137,7 +138,7 @@ main {
 
 #history {
   width: 500px;
-  margin: 50px auto 0px auto;
+  margin: 100px auto 0px auto;
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
@@ -160,10 +161,4 @@ main {
   padding: 10px 0px;
   color: var(--clr-dark);
   font-family: sans-serif;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 100px;
 }
