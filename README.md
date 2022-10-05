@@ -2,6 +2,8 @@
 
 Re-creating a simple implementation of the game rock, paper, scissors using JavaScript, HTML, and CSS.
 
+[Play the game here](https://johnlombardi389.github.io/rock-paper-scissors/)
+
 ![Screenshot](/images/rps-img.png)
 
 ## Tools:
