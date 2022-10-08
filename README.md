@@ -14,10 +14,10 @@ Re-creating a simple implementation of the game rock, paper, scissors using Java
 
 ## Overview
 
-You will play a game of rock, paper, scissors against the computer. A winner is determined by the first to reach 5 wins and records will be tracked in the history area below the game.
+In this project my goal was to show what I had learned about manipulating the DOM. To do this I created a game where you can play rounds of rock, paper, scissors against the computer. A winner is determined by the first to reach 5 wins and records will be added to the page using JavaScript.
 
-## What I learned
+## What I Learned
 
-- This was the first project where I learned to manipulate elements through JavaScript and add content to the page
+- Manipulating elements through JavaScript and also using it to add content to the page
 - Developed a better understanding of JavaScript functions
-- Organizing code in an easily understood way
+- Using programming principles to write cleaner code and good comments
